@@ -1,0 +1,83 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# LoanIQ Backend — Production-Grade .gitignore
+# ──────────────────────────────────────────────────────────────────────────────
+
+# ── Dependencies ──────────────────────────────────────────────────────────────
+node_modules/
+
+# ── Environment & Secrets (NEVER COMMIT) ──────────────────────────────────────
+.env
+
+# Keys, Certificates, and Credentials
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.pub
+
+# Cloud & Service Account Credentials
+*firebase*.json
+*supabase*.json
+*service-account*.json
+*service_account*.json
+*gcp*.json
+*aws*.json
+*azure*.json
+credentials.json
+client_secret*.json
+
+# Secrets, Tokens, & Configs
+*jwt*.json
+*oauth*.json
+*secret*.json
+*token*.json
+*api-key*.json
+
+# ── Cache, Sessions, & Temp Files ─────────────────────────────────────────────
+.cache/
+.temp/
+tmp/
+temp/
+*.local
+sessions/
+*.session
+
+# ── Uploads & Backups ─────────────────────────────────────────────────────────
+uploads/
+backup/
+backups/
+*.bak
+*.swp
+*.save
+
+# ── Binary Documents, Archives, & Reports ─────────────────────────────────────
+*.pdf
+*.docx
+*.xlsx
+*.pptx
+*.zip
+*.rar
+reports/
+certificates/
+
+# ── Databases ─────────────────────────────────────────────────────────────────
+*.sqlite
+*.sqlite3
+*.db
+
+# ── Large Binary Model Files ──────────────────────────────────────────────────
+# Tesseract English training data (~5MB) — download with: npm run setup-ocr
+eng.traineddata
+*.traineddata
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.env.example
+

@@ -1,0 +1,18 @@
+{
+  "continueToPAN": "Continue to PAN Upload",
+  "uploadPAN": "Upload PAN Card",
+  "uploadPANSub": "Take a clear photo or upload your PAN card for OCR verification.",
+  "clickToUpload": "Click to upload PAN card",
+  "fileTypes": "JPG, PNG, PDF supported",
+  "submitAndAnalyze": "Submit & Analyze",
+  "pleaseUploadPAN": "Please Upload PAN Card",
+  "scanWithCamera": "Scan with Camera",
+  "manualUpload": "Manual Upload",
+  "alignCard": "Align Card in Box",
+  "captureNow": "Capture Now",
+  "faceNotDetected": "✋ Face not detected. Please remove hands/masks from your face!",
+  "centerFace": "📍 Please center your face inside the circle!",
+  "maskDetected": "😷 Mask Detected! Please remove it to verify.",
+  "analyzingData": "Analyzing your data…",
+  "aiProcessing": "Our AI is processing your application. This usually takes 10–20 seconds."
+}

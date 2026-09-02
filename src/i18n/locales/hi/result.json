@@ -1,0 +1,11 @@
+{
+  "aiVsId": "एआई बनाम आईडी",
+  "statedVsId": "कथित बनाम आईडी",
+  "interviewVsAi": "साक्षात्कार बनाम एआई",
+  "verified": "सत्यापित",
+  "mismatch": "मेल नहीं खाता",
+  "consistent": "सुसंगत",
+  "inconsistent": "असंगत",
+  "confidence": "आत्मविश्वास:",
+  "noAiModel": "कोई एआई मॉडल कनेक्ट नहीं है"
+}

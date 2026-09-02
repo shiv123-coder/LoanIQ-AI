@@ -1,0 +1,21 @@
+{
+  "precheck_title": "सिस्टम जांच",
+  "precheck_sub": "वीडियो KYC शुरू करने से पहले आपके डिवाइस की जांच हो रही है",
+  "camera": "कैमरा",
+  "microphone": "माइक्रोफ़ोन",
+  "network": "नेटवर्क",
+  "location": "स्थान",
+  "checking": "जांच हो रही है…",
+  "cameraReady": "कैमरा तैयार है",
+  "micReady": "माइक्रोफ़ोन तैयार है",
+  "cameraNotFound": "कैमरा नहीं मिला",
+  "micNotFound": "माइक्रोफ़ोन नहीं मिला",
+  "permissionDenied": "अनुमति अस्वीकृत",
+  "locationEnabled": "स्थान सक्षम",
+  "locationDenied": "स्थान अस्वीकृत (वैकल्पिक)",
+  "notSupported": "समर्थित नहीं",
+  "permissionsRequired": "अनुमति आवश्यक है",
+  "runningChecks": "जांच चल रही है…",
+  "startVerification": "वीडियो सत्यापन शुरू करें",
+  "permissionsNote": "आगे बढ़ने के लिए कैमरा और माइक्रोफ़ोन की अनुमति आवश्यक है। कृपया अनुमति दें और पृष्ठ रीफ्रेश करें।"
+}

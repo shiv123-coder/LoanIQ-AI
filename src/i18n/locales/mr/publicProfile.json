@@ -1,0 +1,20 @@
+{
+  "loanRecords": "कर्ज अर्ज रेकॉर्ड",
+  "fetchingRecords": "डेटाबेसमधून रेकॉर्ड मिळवत आहे...",
+  "noAppsFound": "कोणतेही अर्ज सापडले नाहीत",
+  "noRecordsLinked": "या प्रोफाइलशी कोणतेही कर्ज रेकॉर्ड जोडलेले नाही.",
+  "loaniqApplicant": "LoanIQ अर्जदार",
+  "applications": "अर्ज",
+  "approved": "मंजूर",
+  "pending": "प्रलंबित",
+  "rejected": "नाकारले",
+  "appHistory": "अर्ज इतिहास",
+  "loanApplication": "कर्ज अर्ज",
+  "moneyGiven": "दिलेली रक्कम",
+  "moneyPaid": "भरलेली रक्कम",
+  "repaymentProgress": "परतावा प्रगती",
+  "creditScore": "क्रेडिट स्कोर",
+  "signInManage": "अर्ज व्यवस्थापित करण्यासाठी साइन इन करा",
+  "poweredBy": "द्वारा समर्थित",
+  "secureEncrypted": "सुरक्षित · एन्क्रिप्टेड"
+}

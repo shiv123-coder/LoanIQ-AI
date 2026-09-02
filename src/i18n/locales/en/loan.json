@@ -1,0 +1,21 @@
+{
+  "precheck_title": "System Pre-Check",
+  "precheck_sub": "Verifying your device before starting video KYC",
+  "camera": "Camera",
+  "microphone": "Microphone",
+  "network": "Network",
+  "location": "Location",
+  "checking": "Checking access…",
+  "cameraReady": "Camera ready",
+  "micReady": "Microphone ready",
+  "cameraNotFound": "Camera not found",
+  "micNotFound": "Microphone not found",
+  "permissionDenied": "Permission denied",
+  "locationEnabled": "Location enabled",
+  "locationDenied": "Location denied (optional)",
+  "notSupported": "Not supported",
+  "permissionsRequired": "Permissions Required",
+  "runningChecks": "Running Checks…",
+  "startVerification": "Start Video Verification",
+  "permissionsNote": "Camera and microphone access are required to proceed. Please allow permissions and refresh the page."
+}

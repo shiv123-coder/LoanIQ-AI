@@ -1,0 +1,116 @@
+// API service for communicating with the backend
+import { API_BASE } from '../config/api';
+
+export interface ProcessDataPayload {
+  transcript: string;
+  panImage: string | null;
+  liveness: boolean;
+  location: string | null;
+  userId?: string | null;
+  faceAge?: number | null;
+  userFaceImage?: string | null;
+  faceLandmarks?: any | null;
+}
+
+export interface LoanOffer {
+  offeredAmount: number;
+  maxAmount: number;
+  interestRate: number;
+  tenure: number;
+  emi: number;
+  processingFee: number;
+}
+
+export interface LoanReport {
+  customerDetails: {
+    name: string;
+    transcriptName: string;
+    location: any;
+  };
+  financialDetails: {
+    income: number;
+    incomeTier: string;
+    jobType: string;
+    loanPurpose: string;
+    requestedAmount: number;
+  };
+  panDetails: {
+    panNumber: string | null;
+    dob: string | null;
+    nameMatch?: {
+      panName: string;
+      spokenName: string;
+      score: number;
+      label: string;
+    };
+    quality?: {
+      score: number;
+      label: string;
+    };
+    panIssue?: boolean;
+    panIssueReason?: string;
+  };
+  ageAnalysis?: {
+    statedAge: number | null;
+    idAge: number | null;
+    aiModelConnected: boolean;
+    realAiAge: number | null;
+    realAiConfidence: number | null;
+  };
+  creditScore: number;
+  adjustments: Array<{ factor: string; delta: number }>;
+  riskScore: number;
+  riskComponents?: {
+    incomeScore: number;
+    verificationScore: number;
+    behaviorScore: number;
+  };
+  riskLevel: 'LOW' | 'MEDIUM' | 'HIGH';
+  verification: {
+    liveness: boolean;
+    panVerified: boolean;
+  };
+  decision: 'APPROVED' | 'CONDITIONAL' | 'REJECTED';
+  offer: LoanOffer | null;
+  explanation: string;
+  rejectionReasons?: Array<{
+    title: string;
+    detail: string;
+  }>;
+}
+
+export interface ProcessDataResponse {
+  success: boolean;
+  creditScore: number;
+  riskLevel: 'LOW' | 'MEDIUM' | 'HIGH';
+  decision: 'APPROVED' | 'CONDITIONAL' | 'REJECTED';
+  offer: LoanOffer | null;
+  report: LoanReport;
+  docId: string | null;
+}
+
+export async function processLoanData(payload: ProcessDataPayload): Promise<ProcessDataResponse> {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), 50000);
+
+  let response;
+  try {
+    response = await fetch(`${API_BASE}/process-data`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+      signal: controller.signal
+    });
+  } catch (err: any) {
+    clearTimeout(timeoutId);
+    throw new Error(err.name === 'AbortError' ? 'Server processing timeout (50s limit)' : 'Network error');
+  }
+  clearTimeout(timeoutId);
+
+  if (!response.ok) {
+    const error = await response.json().catch(() => ({ message: 'Network error' }));
+    throw new Error(error.message || `HTTP ${response.status}`);
+  }
+
+  return response.json();
+}

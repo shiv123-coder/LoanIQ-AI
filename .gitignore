@@ -1,0 +1,136 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# LoanIQ Full-Stack — Production-Grade .gitignore
+# ──────────────────────────────────────────────────────────────────────────────
+
+# ── Dependencies ──────────────────────────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+
+# ── Build Outputs ─────────────────────────────────────────────────────────────
+dist/
+dist-ssr/
+build/
+out/
+
+# ── Logs & Debugging ──────────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ── Environment & Secrets (NEVER COMMIT) ──────────────────────────────────────
+.env
+.env.example
+backend/.env
+backend/.env.*
+
+
+
+# Docker Secrets
+.docker/
+docker-compose.override.yml
+
+# ── Cache, Sessions, & Temp Files ─────────────────────────────────────────────
+.cache/
+.temp/
+tmp/
+temp/
+*.local
+sessions/
+*.session
+
+# ── Uploads & Backups ─────────────────────────────────────────────────────────
+uploads/
+backup/
+backups/
+*.bak
+*.swp
+*.save
+*~
+
+# ── Binary Documents, Archives, & Reports (NEVER COMMIT) ──────────────────────
+*.pdf
+*.docx
+*.xlsx
+*.pptx
+*.zip
+*.rar
+*.tar
+*.gz
+*.7z
+reports/
+exported_reports/
+certificates/
+
+# ── Databases ─────────────────────────────────────────────────────────────────
+*.sqlite
+*.sqlite3
+*.db
+*.db3
+*.s3db
+*.sl3
+local_databases/
+dump.rdb
+
+# ── Test / Debug Scripts (Local Only) ─────────────────────────────────────────
+debug_db.cjs
+test_api.cjs
+test_api.js
+tmp/add_admin.js
+
+# ── Fake / Sample Documents ───────────────────────────────────────────────────
+fake_pan_card.pdf
+fake_pan_card.png
+public/test_pan_card.png
+pan_integration_guide.md
+assets/pan_mockups/
+
+# ── Large Binary Model Files ──────────────────────────────────────────────────
+# Tesseract training data — download separately (see RUN.md)
+backend/eng.traineddata
+*.traineddata
+
+# ── OS / Editor ───────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.iml
+
+# ── Vite ──────────────────────────────────────────────────────────────────────
+vite.config.ts.timestamp-*
+
+# ── Coverage ──────────────────────────────────────────────────────────────────
+coverage/
+.nyc_output/
+interview_questions.md 
+DEPLOYMENT.md
+
+Demo-Video.mp4
+
+# ── Miscellaneous ─────────────────────────────────────────────────────────────
+security_audit_report.md
+split.ts
+bun.lock
+bun.lockb
+serviceAccountKey.json
+authentication.md
+rzp-key.csv

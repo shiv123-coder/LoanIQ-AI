@@ -1,0 +1,11 @@
+{
+  "aiVsId": "एआय वि आयडी",
+  "statedVsId": "सांगितलेले वि आयडी",
+  "interviewVsAi": "मुलाखत वि एआय",
+  "verified": "सत्यापित",
+  "mismatch": "जुळत नाही",
+  "consistent": "सुसंगत",
+  "inconsistent": "असंगत",
+  "confidence": "आत्मविश्वास:",
+  "noAiModel": "कोणतेही एआय मॉडेल कनेक्ट केलेले नाही"
+}

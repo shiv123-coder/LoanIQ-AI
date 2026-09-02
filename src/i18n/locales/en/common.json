@@ -1,0 +1,21 @@
+{
+  "appName": "LoanIQ ",
+  "back": "Back",
+  "next": "Continue",
+  "submit": "Submit",
+  "loading": "Loading...",
+  "error": "Error",
+  "retry": "Retry",
+  "secure": "Secure · Encrypted",
+  "chooseLanguage": "Choose Language",
+  "register": "Register",
+  "login": "Login",
+  "admin": "Admin",
+  "backToHome": "Back to Home",
+  "notifications": "Notifications",
+  "newNotifs": "new",
+  "loadingNotifs": "Loading notifications...",
+  "notifError": "Unable to load notifications. Please check your connection.",
+  "noNotifs": "No notifications yet",
+  "noNotifsDesc": "When there are updates about your application, they'll appear here."
+}

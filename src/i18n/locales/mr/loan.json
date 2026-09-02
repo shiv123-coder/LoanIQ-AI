@@ -1,0 +1,21 @@
+{
+  "precheck_title": "सिस्टम तपासणी",
+  "precheck_sub": "व्हिडिओ KYC सुरू करण्यापूर्वी तुमच्या डिव्हाइसची तपासणी होत आहे",
+  "camera": "कॅमेरा",
+  "microphone": "मायक्रोफोन",
+  "network": "नेटवर्क",
+  "location": "स्थान",
+  "checking": "तपासत आहे…",
+  "cameraReady": "कॅमेरा तयार आहे",
+  "micReady": "मायक्रोफोन तयार आहे",
+  "cameraNotFound": "कॅमेरा सापडला नाही",
+  "micNotFound": "मायक्रोफोन सापडला नाही",
+  "permissionDenied": "परवानगी नाकारली",
+  "locationEnabled": "स्थान सक्षम",
+  "locationDenied": "स्थान नाकारले (पर्यायी)",
+  "notSupported": "समर्थित नाही",
+  "permissionsRequired": "परवानगी आवश्यक आहे",
+  "runningChecks": "तपासणी चालू आहे…",
+  "startVerification": "व्हिडिओ पडताळणी सुरू करा",
+  "permissionsNote": "पुढे जाण्यासाठी कॅमेरा आणि मायक्रोफोनची परवानगी आवश्यक आहे. कृपया परवानगी द्या आणि पृष्ठ रीफ्रेश करा."
+}

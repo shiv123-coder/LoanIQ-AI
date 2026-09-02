@@ -1,0 +1,18 @@
+{
+  "continueToPAN": "PAN अपलोडवर जा",
+  "uploadPAN": "PAN कार्ड अपलोड करा",
+  "uploadPANSub": "OCR पडताळणीसाठी तुमच्या PAN कार्डचा स्पष्ट फोटो अपलोड करा.",
+  "clickToUpload": "PAN कार्ड अपलोड करण्यासाठी क्लिक करा",
+  "fileTypes": "JPG, PNG, PDF समर्थित",
+  "submitAndAnalyze": "सबमिट करा आणि विश्लेषण करा",
+  "pleaseUploadPAN": "कृपया PAN कार्ड अपलोड करा",
+  "scanWithCamera": "कॅमेऱ्याने स्कॅन करा",
+  "manualUpload": "फाइल अपलोड करा",
+  "alignCard": "कार्ड बॉक्समध्ये ठेवा",
+  "captureNow": "आता फोटो घ्या",
+  "faceNotDetected": "✋ चेहरा आढळला नाही. हात/मास्क काढा!",
+  "centerFace": "📍 कृपया तुमचा चेहरा वर्तुळात मध्यभागी ठेवा!",
+  "maskDetected": "😷 मास्क आढळला! पडताळणीसाठी काढा.",
+  "analyzingData": "तुमचा डेटा विश्लेषित होत आहे…",
+  "aiProcessing": "आमची AI तुमच्या अर्जावर प्रक्रिया करत आहे."
+}
