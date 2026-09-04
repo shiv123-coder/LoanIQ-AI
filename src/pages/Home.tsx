@@ -40,7 +40,7 @@ export default function Home() {
                 {t('home:getStarted', 'Get Started / Sign In')}
                 <ArrowRight size={20} />
               </Link>
-              <a href="https://drive.google.com/file/d/1eIIWJnoTZNbAy_Fmg2D42Dc-NBCkRcOs/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-8 py-4 bg-secondary hover:bg-secondary/80 text-foreground border border-border rounded-xl font-semibold flex items-center justify-center gap-2 transition-all hover:-translate-y-1">
+              <a href="https://www.youtube.com/watch?v=JsIIFqQFpvc" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-8 py-4 bg-secondary hover:bg-secondary/80 text-foreground border border-border rounded-xl font-semibold flex items-center justify-center gap-2 transition-all hover:-translate-y-1">
                 <PlayCircle size={20} />
                 {t('home:viewDemo', 'View Demo')}
               </a>

@@ -40,7 +40,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-8">
             <a href="/#features" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">{t('common:navFeatures', 'Features')}</a>
             <a href="/#workflow" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">{t('common:navHowItWorks', 'How it Works')}</a>
-            <a href="https://drive.google.com/file/d/1eIIWJnoTZNbAy_Fmg2D42Dc-NBCkRcOs/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">{t('common:navDemo', 'Demo')}</a>
+            <a href="https://www.youtube.com/watch?v=JsIIFqQFpvc" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">{t('common:navDemo', 'Demo')}</a>
             
             <div className="flex items-center gap-4 pl-4 border-l border-border">
               <LanguageSwitcher compact />
@@ -82,7 +82,7 @@ export default function Navbar() {
           <div className="px-4 py-6 flex flex-col space-y-4">
             <a href="/#features" onClick={closeMenu} className="text-lg font-medium text-muted-foreground hover:text-foreground">{t('common:navFeatures', 'Features')}</a>
             <a href="/#workflow" onClick={closeMenu} className="text-lg font-medium text-muted-foreground hover:text-foreground">{t('common:navHowItWorks', 'How it Works')}</a>
-            <a href="https://drive.google.com/file/d/1eIIWJnoTZNbAy_Fmg2D42Dc-NBCkRcOs/view?usp=sharing" target="_blank" rel="noopener noreferrer" onClick={closeMenu} className="text-lg font-medium text-muted-foreground hover:text-foreground">{t('common:navDemo', 'Demo')}</a>
+            <a href="https://www.youtube.com/watch?v=JsIIFqQFpvc" target="_blank" rel="noopener noreferrer" onClick={closeMenu} className="text-lg font-medium text-muted-foreground hover:text-foreground">{t('common:navDemo', 'Demo')}</a>
             <div className="pt-4 border-t border-border flex flex-col gap-4">
               <LanguageSwitcher compact={false} />
               {user ? (
